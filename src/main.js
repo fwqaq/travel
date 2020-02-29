@@ -3,8 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import fastClick from 'fastclick'
+import 'styles/reset.css'// 页面主页
+import 'styles/border.css'// 使用border.css像素边框
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
+fastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
@@ -13,3 +18,5 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+// 路由就是根据网址的不同，返回不同的内容给用户
