@@ -4,18 +4,15 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import fastClick from 'fastclick'
-<<<<<<< HEAD
 import 'styles/reset.css'// 页面主页
 import 'styles/border.css'// 使用border.css像素边框
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 import 'styles/iconfont.css'
-=======
-import './assets/styles/reset.css'// 页面主页
-import './assets/styles/border.css'// 使用border.css像素边框
->>>>>>> 5ff77c93a9d996392778f8ce8e114bcd42714f66
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
-
+Vue.use(VueAwesomeSwiper)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -24,8 +21,7 @@ new Vue({
   template: '<App/>'
 })
 
-<<<<<<< HEAD
+
 // 路由就是根据网址的不同，返回不同的内容给用户
-=======
-// 路由就是根据网址的不同，返回不同的内容给用户
->>>>>>> 5ff77c93a9d996392778f8ce8e114bcd42714f66
+
+

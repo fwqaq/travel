@@ -1,4 +1,4 @@
-ECHO off
+@ECHO off
 SETLOCAL
 CALL :find_dp0
 
