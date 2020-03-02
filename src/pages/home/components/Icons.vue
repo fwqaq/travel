@@ -16,51 +16,13 @@
 <script>
 	export default {
 		name: 'HomeIcons',
-		data () {
-			return {
-				iconList: [{
-					id: '0001',
-					imgUrl: "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-					desc: '景点门票'
-				},{
-					id: '0002',
-					imgUrl: "http://img1.qunarzz.com/piao/fusion/1803/ab/6f7d6e44963c9302.png",
-					desc: '泡温泉'
-				},{
-					id: '0003',
-					imgUrl: "http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png",
-					desc: '一日游'
-				},{
-					id: '0004',
-					imgUrl: "http://img1.qunarzz.com/piao/fusion/1803/89/55083b0f1951f302.png",
-					desc: '两江夜游'
-				},{
-					id: '0005',
-					imgUrl: "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20191/de711920c71e38287d9f95f7910aa1aa.png",
-					desc: '精品小团'
-				},{
-					id: '0006',
-					imgUrl: "http://img1.qunarzz.com/piao/fusion/1803/96/c70f1e85ae4a4f02.png",
-					desc: '神秘武隆'
-				},{
-					id: '0007',
-					imgUrl: "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20193/338c5b924c5809e8c7b14f60a953c3e2.png",
-					desc: '重庆欢乐谷'
-				},{
-					id: '0008',
-					imgUrl: "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20194/b71c1387a921ccf9c6edc7e8def3da90.png",
-					desc: '重庆动物园'
-				},{
-					id: '0009',
-					imgUrl: "http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/5d502c0984b223bfeed0aac5ecdc7a99.png",
-					desc: '黑山谷'
-				}]
-			}
+		props: {
+			list: Array
 		},
 		computed: {
 			pages () {
 				const pages = []
-				this.iconList.forEach((item,index)=>{
+				this.list.forEach((item,index)=>{
 					const page = Math.floor(index/8)
 					if(!pages[page]){
 						pages[page]=[]
