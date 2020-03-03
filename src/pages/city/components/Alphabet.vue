@@ -29,8 +29,14 @@
 		},
 		data () {
 			return {
-				touchStatus: false
+				touchStatus: false,
+				startY: 0,
+				timer: null
 			}
+		},
+		update () {
+			//生命周期钩子，改变的时候
+			this.startY = this.$refs['A'][0].offsetTop//获取元素到顶端的距离
 		},
 		methods: {
 			handleLetterClick (e) {
@@ -42,13 +48,18 @@
 			},
 			handleTouchMove (e) {//点击移动事件监听
 				if (this.touchStatus) {
-					const startY = this.$refs['A'][0].offsetTop//获取元素到顶端的距离
+					if (this.timer) {
+						clearTimeout(this.timer)
+					}//函数节流提高性能。
+					this.timer = setTimeout(()=>{
+					const startY = this.startY
 					const touchY = e.touches[0].clientY - 79
 					const index = Math.floor((touchY - startY) / 20)
 					//当前位置的下标
 					if(index >= 0 && index < this.letters.length){
 						this.$emit('change',this.letters[index])
 					}
+					},16)
 				}
 			},
 			handleTouchEnd () {//点击结束事件监听
