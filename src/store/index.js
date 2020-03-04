@@ -8,9 +8,9 @@
  export default new Vuex.Store({
  	state,
  	mutations,
- 	getters: {//相当于计算属性
- 		doubleCity (state) {
- 			return state.city + ' '+ state.city
- 		}
- 	}
+ 	// getters: {//相当于计算属性
+ 	// 	doubleCity (state) {
+ 	// 		return state.city + ' '+ state.city
+ 	// 	}
+ 	// }
  })
