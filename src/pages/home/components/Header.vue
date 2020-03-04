@@ -22,7 +22,7 @@ export default {
   name: 'HomeHeader',
   computed: {
   	...mapState(['city']),
-  	...mapGetters(['doubleCity'])
+  	//...mapGetters(['doubleCity'])
   }
 }
 </script>
