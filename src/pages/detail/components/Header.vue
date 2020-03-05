@@ -47,9 +47,13 @@
 				
 			}
 		},
-		activated () {
+		mounted () {
 			//添加监听事件，滚动事件，
 			window.addEventListener('scroll',this.handleScroll)
+		},
+		//解绑添加的监听事件
+		unmounted () {
+			window.removeEventListener('scroll',this.handleScroll)
 		}
 	}
 
