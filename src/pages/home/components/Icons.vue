@@ -17,7 +17,7 @@
 	export default {
 		name: 'HomeIcons',
 		props: {
-			list: Array
+			list: Array//数据接收
 		},
 		computed: {
 			pages () {
