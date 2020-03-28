@@ -1,8 +1,10 @@
 <template>
 	<div class="header">
+		<router-link to='/info'>
 		<div class="header-left">
-			<div class="iconfont back-icon">&#xe624;</div>
+			<div class="iconfont back-icon">&#xe600;</div>
 		</div>
+		</router-link>
 		<div class="header-input">
 			<span class="iconfont">&#xe632;</span>
 			输入城市\景点\游玩主题
