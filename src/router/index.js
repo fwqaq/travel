@@ -5,6 +5,7 @@ import Home from '@/pages/home/Home'
 import City from '@/pages/city/City'
 import Detail from '@/pages/detail/Detail'
 import Info from '@/pages/info/Info'
+import Winshop from '@/pages/winshop/Winshop'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
       path: '/info',
       name: '/Info',
       component: Info
+    },{
+      path: '/winshop',
+      name: 'Winshop',
+      component: Winshop
     }],
     scrollBehavior (to, from, savedPosition) {
       return { x: 0, y: 0 }

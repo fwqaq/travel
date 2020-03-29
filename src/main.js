@@ -8,6 +8,7 @@ import 'styles/reset.css'// 页面主页
 import 'styles/border.css'// 使用border.css像素边框
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
+import 'styles/iconfont.js'
 import 'styles/iconfont.css'
 import store from './store'
 import 'babel-polyfill'

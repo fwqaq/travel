@@ -6,6 +6,7 @@
 		<home-icons :list="iconList"></home-icons>
 		<home-recommend :list="recommendList"></home-recommend>
 		<home-weekend :list="weekendList"></home-weekend>
+    <home-detail></home-detail>
 	</div>
 </template>
 
@@ -15,6 +16,7 @@ import HomeSwiper from './components/Swiper'
 import HomeIcons from './components/Icons'
 import HomeRecommend from './components/Recommend'
 import HomeWeekend from './components/Weekend'
+import HomeDetail from './components/Detail'
 import axios from 'axios'
 import {mapState} from 'vuex'
 export default {
@@ -24,7 +26,8 @@ export default {
   	HomeSwiper,
   	HomeIcons,
   	HomeRecommend,
-  	HomeWeekend
+  	HomeWeekend,
+    HomeDetail
   },
   data () {
   	return {

@@ -49,6 +49,7 @@
 			height: 0.64rem
 			top: .03rem
 			margin-top: .1rem
+			fill: currentColor
 		.money-font
 			flex: 1
 			height: .64rem

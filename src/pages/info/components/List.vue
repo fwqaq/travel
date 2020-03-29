@@ -26,14 +26,14 @@
 	</div>
 </template>
 
-<script >
+<script>
 	export default{
 		name:"InfoList",
 
 	}
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus" scoped >
 .list
 	border-style: groove
 	.kong
@@ -54,6 +54,8 @@
 			height: 0.64rem
 			top: .03rem
 			margin-top: .1rem
+			fill: currentColor
+			overflow: hidden
 		.money-font
 			flex: 1
 			height: .64rem
