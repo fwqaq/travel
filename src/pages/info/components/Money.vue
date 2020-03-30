@@ -22,7 +22,7 @@
 	</div>
 </template>
 
-<script >
+<script src="styles/iconfont.js">
 	export default{
 		name:"InfoMoney",
 
@@ -50,6 +50,8 @@
 			top: .03rem
 			margin-top: .1rem
 			fill: currentColor
+			vertical-align: -0.15em
+			overflow: hidden;
 		.money-font
 			flex: 1
 			height: .64rem

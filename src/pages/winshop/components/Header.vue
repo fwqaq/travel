@@ -1,5 +1,8 @@
 <template>
 	<div class="wrapper">
+		<router-link to="/">
+			<div class="iconfont back-icon">&#xe624;</div>
+		</router-link>
 		<swiper :options="swiperOption" v-if="showSwiper">
 	    <!-- slides -->
 		    <swiper-slide v-for="item of list" :key="item.id">
@@ -50,7 +53,16 @@
 		background: #eee
 		position: absolute
 		z-index: -1
+		.back-icon
+			font-size: .24rem 
+			overflow: hidden
+			position: absolute
+			z-index: 999
+			top: 0
+			font-size: 0.5rem
+			font-weight: bold
 		.swiper-img
 			width: 100%
 			height: 7rem
+
 </style>

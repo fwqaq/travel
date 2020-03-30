@@ -4,6 +4,7 @@
     <winshop-header :list="swiperList"></winshop-header>
     <winshop-buyfor></winshop-buyfor>
     <winshop-detail></winshop-detail>
+    <winshop-list :list="shopList"></winshop-list>
 	</div>
 </template>
 
@@ -11,17 +12,20 @@
 import WinshopHeader from './components/Header'
 import WinshopBuyfor from './components/Buyfor'
 import WinshopDetail from './components/Detail'
+import WinshopList from './components/List'
 import axios from 'axios'
 export default {
   name: 'Winshop',
   components:{
     WinshopHeader,
     WinshopBuyfor,
-    WinshopDetail
+    WinshopDetail,
+    WinshopList
   },
   data () {
     return {
       swiperList: [],
+      shopList: []
     }
   },
   methods: {
@@ -34,6 +38,7 @@ export default {
       if(res.ret && res.data){
         const data = res.data
         this.swiperList = data.swiperList
+        this.shopList = data.shopList
       }
     }
   },

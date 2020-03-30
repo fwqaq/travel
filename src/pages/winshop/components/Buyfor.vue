@@ -8,7 +8,7 @@
           <router-link to="/city">
              <div class="header-pos">北京</div>
           </router-link>
-       <div class="iconfont header-pos1">我的位置  &#xe6c6;</div>
+       <div class="iconfont header-pos1">我的位置&#xe6c6;</div>
 	   </div>
 
      <div class="header-time">
@@ -66,14 +66,20 @@ export default {
       top: 1rem
       color: #000
       font-weight: bold
+      width: 100%
       .header-pos
-        position: fixed
-        left: 1rem
+        position: absolute
+        top: 0rem
+        left: 0.5rem
         color: #000
         font-weight: bold
+        margin-right: 0.5rem
+        text-overflow: ellipsis
       .header-pos1
-        position: fixed
-        right: 1rem
+        position: absolute
+        overflow: hidden
+        text-overflow: ellipsis
+        right: 0.8rem
     .header-time
       font-size: .3rem
       .header-time1
@@ -146,12 +152,12 @@ export default {
       width: 100%
       color: #000
       .header-detail1
-        position: fixed
+        position: absolute
         font-size: .3rem
         text-align: left
       .header-detail2
-        position: fixed
-        left: 2.7rem
+        position: absolute
+        left: 2.3rem
         font-size: .3rem
         text-align: center
       .header-detail3
