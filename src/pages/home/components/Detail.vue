@@ -5,7 +5,7 @@
 				<div class="iconfont header-back">&#xe62f;</div>
 				<div class="shop-font">酒店</div>
 			</router-link>
-			<router-link to='/'>
+			<router-link to='/airplane'>
 				<div class="iconfont header-back1">&#xe753;</div>
 				<div class="shop-font1">机票</div>
 			</router-link>

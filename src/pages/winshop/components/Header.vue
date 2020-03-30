@@ -64,5 +64,4 @@
 		.swiper-img
 			width: 100%
 			height: 7rem
-
 </style>
