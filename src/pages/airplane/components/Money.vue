@@ -23,17 +23,20 @@
      </div>
 
      <div class="header-input">
-      <span class="iconfont">&#xe632;</span>
-      <input  type="text" placeholder="位置/景点/店名">
+      <div class="header-input1">选择舱位</div>
+      <div class="label">
+        <input type="radio" id="male" value="Male" v-model="gender">携带儿童
+        <div class="age1">2~12岁</div>
+        <input type="radio" id="female" value="Female" v-model="gender">携带婴儿
+        <div class="age2">14天~2岁</div>
+      </div>
     </div>
 
     <div class="header-button">
-      开始搜索
+      搜索
     </div>
     <div class="header-detial">
-      <div class="iconfont header-detail1">&#xe6aa;线上开发票</div>
-      <div class="iconfont header-detail2">&#xe636;24小时客服</div>
-      <div class="iconfont header-detail3">&#xe61d;房源真实认证</div>
+      <div class="iconfont header-detail1">&#xe629;我的订单</div>
     </div>
   </div>
 </template>
@@ -41,32 +44,38 @@
 <script>
 export default {
   name: 'WinshopBuyfor',
-
+  data () {
+    return {
+      gender: ''
+    }
+  }
 }
 
 </script>
 
 <style lang="stylus" scoped>
  .header
-    top: 4.2rem
+    top: 2.8rem
     left: .4rem
     position: absolute 
     z-index: auto
     background-color: rgba(0,0,0,0~1)
     height: 5.1rem
+    background: #eee
     width: 90%
     .header-font
+      margin-top: 0.2rem
       font-size: 0.4rem
       color: #000
       .header-font1
       	position: absolute
-      	left: 0.5rem
+      	left: 0.8rem
       .header-font2
       	position: absolute
       	left: 1.95rem
       .header-font3
       	position: absolute
-      	right: 0.5rem
+      	right: 0.8rem
     .header-two
       position: absolute
       font-size: 0.35rem
@@ -107,8 +116,9 @@ export default {
         margin-top: 0.09rem
     .header-input
       position: absolute
-   	  top: 0.5rem
-      font-weight: bold
+   	  top: 0.2rem
+      left: 0.1rem
+      font-size: 0.35rem
       flex: 1
       height: .64rem
       width: 6rem
@@ -116,9 +126,21 @@ export default {
       margin-top: 2.4rem
       margin-left: .2rem
       padding-left: .2rem
-      background: #fff
       border-radius: .1rem
-      color: #ccc
+      color: #000
+      .label
+        font-size: 0.25rem
+        position: absolute
+        top: 0rem
+        right:0.5rem
+        .age1
+          position: absolute
+          top: 0.3rem
+          left: 0.22rem
+        .age2
+          position: absolute
+          top: 0.3rem
+          left: 1.5rem
     .header-button
       left: .5rem
       right: .5rem
@@ -140,13 +162,6 @@ export default {
       .header-detail1
         position: absolute
         font-size: .3rem
-        text-align: left
-      .header-detail2
-        position: absolute
-        left: 2.3rem
-        font-size: .3rem
-        text-align: center
-      .header-detail3
-        font-size: .3rem
-        text-align: right
+        left: 2.5rem
+        color: #ddd
 </style>
