@@ -3,9 +3,9 @@
 	<div class="header">
    <!--  选择地区 -->
       <div class="header-font">
-      	<div class="header-font1">国内</div>
-      	<div class="header-font2">国际/中国港澳台</div>
-      	<div class="header-font3">往返</div>
+      	<div class="header-font1" @click="handleClick1" :style="{'color':this.str}" :key=this.str>国内</div>
+      	<div class="header-font2" @click="handleClick2" :style="{'color':this.str1}" :key=this.str1>国际/中国港澳台</div>
+      	<div class="header-font3" @click="handleClick3" :style="{'color':this.str2}" :key=this.str2>往返</div>
       </div>
 
        <div class="header-two">
@@ -46,9 +46,37 @@ export default {
   name: 'WinshopBuyfor',
   data () {
     return {
+<<<<<<< HEAD
       gender: ''
     }
   }
+=======
+      gender: '',
+      str: '#00bcd4',
+      str1: '#000000',
+      str2: '#000000'
+    }
+
+  },
+  methods: {
+    handleClick1 () {
+      this.str = '#00bcd4',
+      this.str1 = '#000000',
+      this.str2 = '#000000'
+    },
+    handleClick2 () {
+      this.str = '#000000'
+      this.str1 = '#00bcd4'
+      this.str2 = '#000000'
+    },
+    handleClick3 () {
+      this.str = '#000000'
+      this.str1 = '#000000'
+      this.str2 = '#00bcd4'
+    }
+  },
+  mounted () {}
+>>>>>>> air
 }
 
 </script>
@@ -61,7 +89,11 @@ export default {
     z-index: auto
     background-color: rgba(0,0,0,0~1)
     height: 5.1rem
+<<<<<<< HEAD
     background: #eee
+=======
+    background: #fff
+>>>>>>> air
     width: 90%
     .header-font
       margin-top: 0.2rem

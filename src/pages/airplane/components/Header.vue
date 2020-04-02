@@ -20,7 +20,7 @@
 		width: 100%
 		height: 5rem
 		overflow: hidden
-		background: #eee
+		background: #fff
 		position: absolute
 		z-index: -1
 		.font
