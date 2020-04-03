@@ -47,10 +47,13 @@ export default {
   data () {
     return {
 <<<<<<< HEAD
+<<<<<<< HEAD
       gender: ''
     }
   }
 =======
+=======
+>>>>>>> air
       gender: '',
       str: '#00bcd4',
       str1: '#000000',
@@ -76,6 +79,9 @@ export default {
     }
   },
   mounted () {}
+<<<<<<< HEAD
+>>>>>>> air
+=======
 >>>>>>> air
 }
 
@@ -90,7 +96,11 @@ export default {
     background-color: rgba(0,0,0,0~1)
     height: 5.1rem
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: #eee
+=======
+    background: #fff
+>>>>>>> air
 =======
     background: #fff
 >>>>>>> air
