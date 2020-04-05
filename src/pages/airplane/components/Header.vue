@@ -21,11 +21,10 @@
 		height: 5rem
 		overflow: hidden
 		background: #fff
-		position: absolute
 		z-index: -1
 		.font
 			font-size: .24rem 
-			position: absolute
+			position: fixed
 			z-index: 999
 			top: 0.2rem
 			left: 3.3rem
@@ -34,7 +33,7 @@
 		.back-icon
 			font-size: .24rem 
 			overflow: hidden
-			position: absolute
+			position: fixed
 			z-index: 999
 			top: 0.2rem
 			font-size: 0.5rem
@@ -46,7 +45,7 @@
 			font-size: .28rem
 			color: #fff
 			overflow: hidden
-			position: absolute
+			position: fixed
 			z-index: 999
 			top: 0.2rem
 			right: .05rem

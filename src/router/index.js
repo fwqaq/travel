@@ -7,6 +7,8 @@ import Detail from '@/pages/detail/Detail'
 import Info from '@/pages/info/Info'
 import Winshop from '@/pages/winshop/Winshop'
 import Airplane from '@/pages/airplane/Airplane'
+import Order from '@/pages/order/Order'
+import Searchorder from '@/pages/searchorder/Searchorder'
 
 Vue.use(Router)
 
@@ -36,6 +38,14 @@ export default new Router({
       path: '/airplane',
       name: 'Airplane',
       component: Airplane
+    },{
+      path: '/order',
+      name: 'Order',
+      component: Order
+    },{
+      path: '/searchorder',
+      name: 'Searchorder',
+      component: Searchorder 
     }],
     scrollBehavior (to, from, savedPosition) {
       return { x: 0, y: 0 }
