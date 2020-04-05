@@ -36,7 +36,9 @@
       搜索
     </div>
     <div class="header-detial">
+      <router-link to="order" class="header-detail">
       <div class="iconfont header-detail1">&#xe629;我的订单</div>
+      </router-link>
     </div>
   </div>
 </template>

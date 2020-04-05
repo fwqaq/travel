@@ -9,6 +9,10 @@
 				<div class="iconfont header-back1">&#xe753;</div>
 				<div class="shop-font1">机票</div>
 			</router-link>
+			<router-link to="/order">
+				<div class="iconfont header-back2">&#xe629;</div>
+				<div class="shop-font2">我的订单</div>
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -35,7 +39,7 @@
 		.header-back
 			position: absolute
 			top: 0
-			left: 1.5rem
+			left: 0.8rem
 			width: .64rem
 			text-align: center
 			font-size: .4rem
@@ -43,12 +47,12 @@
 		.shop-font
 			position: absolute
 			top: 0
-			left: 2.1rem
+			left: 1.4rem
 			color: #ddd
 		.header-back1
 			position: absolute
 			top: 0
-			right: 1.5rem
+			right: 4rem
 			width: .64rem
 			text-align: center
 			font-size: .4rem
@@ -56,6 +60,18 @@
 		.shop-font1
 			position: absolute
 			top: 0
+			right: 3.4rem
+			color: #ddd
+		.header-back2
+			position: absolute
+			top: 0
 			right: 2.1rem
+			width: .64rem
+			font-size: .4rem
+			color: #fff
+		.shop-font2
+			position: absolute
+			top: 0
+			right: 1rem
 			color: #ddd
 </style>

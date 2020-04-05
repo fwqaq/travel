@@ -2,26 +2,34 @@
 	<div class="list">
 		<div class="kong"></div>
 	
-			<div class="list-one" >
-				<div class="iconfont back-icon">&#xe601;</div>
-				<div class="money-font">我的订单</div>
+			<div class="list-one">
+				<router-link to="/order" class="list-one">
+				<div class="iconfont back-icon" >&#xe601;</div>
+				<div class="money-font" >我的订单</div>
 				<div class="iconfont back-right">&#xe707;</div>
+				</router-link>
 			</div>
 			<div class="list-one">
+				<router-link to="/order" class="list-one">
 				<div class="iconfont back-icon">&#xe7a2;</div>
 				<div class="money-font">我的退款</div>
 				<div class="iconfont back-right">&#xe707;</div>
+				</router-link>
 			</div>
 			<div class="list-one">
+				<router-link to="order" class="list-one">
 				<div class="iconfont back-icon">&#xe6b5;</div>
 				<div class="money-font">我的发票</div>
 				<div class="iconfont back-right">&#xe707;</div>
+				</router-link>
 			</div>
 			
 			<div class="list-one">
+				<router-link to="/order" class="list-one"> 
 				<div class="iconfont back-icon">&#xe678;</div>
 				<div class="money-font">我的攻略</div>
 				<div class="iconfont back-right">&#xe707;</div>
+			</router-link>
 			</div>
 	</div>
 </template>
@@ -47,6 +55,7 @@
 		border-color: #fff
 		display: flex
 		border-style: dashed
+		top: 0
 		.back-icon
 			text-align: left
 			font-size: .7rem
