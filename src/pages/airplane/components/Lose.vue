@@ -1,11 +1,5 @@
 <template>
 	<div class="header">
-<<<<<<< HEAD
-<<<<<<< HEAD
-		hello world
-=======
-=======
->>>>>>> air
 		<table class="tab">
 			<tr class="back">
 				<td>
@@ -28,10 +22,6 @@
 				<td ><div class="icon-font">值机选座</div></td>
 			</tr>
 		</table>
-<<<<<<< HEAD
->>>>>>> air
-=======
->>>>>>> air
 	</div>
 </template>
 
@@ -42,12 +32,6 @@
 </script>
 
 <style lang="stylus" scoped>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
-=======
-=======
->>>>>>> air
 	.header
 		position: absolute
 		top: 8.1rem
@@ -83,8 +67,4 @@
 				text-align: center
 			.detail3
 				position: absolute
-<<<<<<< HEAD
->>>>>>> air
-=======
->>>>>>> air
 </style>
