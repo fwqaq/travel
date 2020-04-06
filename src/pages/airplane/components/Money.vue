@@ -86,9 +86,13 @@ export default {
     z-index: auto
     background-color: rgba(0,0,0,0~1)
     height: 5.1rem
-    background: #eee
     background: #fff
     width: 90%
+    border-top-style: ridge
+    border-bottom-style: ridge
+    border-left-style: ridge
+    border-right-style: ridge
+    border-color: #F8F8FF
     .header-font
       margin-top: 0.2rem
       font-size: 0.4rem

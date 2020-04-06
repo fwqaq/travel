@@ -49,13 +49,19 @@ export default {
 
 <style lang="stylus" scoped>
   .header
-    top: 4.2rem
-    left: .4rem
+    top: 4rem
+    left: .35rem
     position: absolute 
-    z-index: auto
+    z-index: 998
     background-color: rgba(0,0,0,0~1)
     height: 5.1rem
+    background: #fff
     width: 90%
+    border-top-style: ridge
+    border-bottom-style: ridge
+    border-left-style: ridge
+    border-right-style: ridge
+    border-color: #F8F8FF
     .header-font
       font-size: 0.4rem
       text-align: center

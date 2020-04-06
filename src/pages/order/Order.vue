@@ -16,7 +16,7 @@ import OrderDetail from './components/Detail'
 		components: {
 			OrderHeader,
 			OrderList,
-			OrderDetail
+			OrderDetail,
 		}
 }
 </script>

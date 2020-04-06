@@ -38,13 +38,17 @@
 		left: 0.38rem
 		right: 0.5rem
 		background: #ddd
+		width: 91.5%
 		.tab
 			left: 2rem
 			width: 100%
 			align: center 
 			valign: center 
-			border-top-style: inset
-			border-bottom-style: inset
+			border-top-style: ridge
+			border-bottom-style: ridge
+			border-left-style: ridge
+			border-right-style: ridge
+			border-color: #F8F8FF
 			height: 1.5rem
 			background: #fff
 			.back
