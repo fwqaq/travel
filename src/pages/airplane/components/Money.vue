@@ -48,14 +48,6 @@ export default {
   name: 'WinshopBuyfor',
   data () {
     return {
-<<<<<<< HEAD
-<<<<<<< HEAD
-      gender: ''
-    }
-  }
-=======
-=======
->>>>>>> air
       gender: '',
       str: '#00bcd4',
       str1: '#000000',
@@ -81,10 +73,7 @@ export default {
     }
   },
   mounted () {}
-<<<<<<< HEAD
->>>>>>> air
-=======
->>>>>>> air
+
 }
 
 </script>
@@ -97,15 +86,8 @@ export default {
     z-index: auto
     background-color: rgba(0,0,0,0~1)
     height: 5.1rem
-<<<<<<< HEAD
-<<<<<<< HEAD
     background: #eee
-=======
     background: #fff
->>>>>>> air
-=======
-    background: #fff
->>>>>>> air
     width: 90%
     .header-font
       margin-top: 0.2rem
