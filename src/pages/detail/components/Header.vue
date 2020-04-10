@@ -84,6 +84,7 @@
 		color: #fff
 		background: #00bcd4
 		font-size: .32rem
+		z-index: 999
 		.header-fixed-back	
 			position: absolute
 			top: 0
